@@ -1,0 +1,72 @@
+# Site settings
+title: "One Person's Revelry"
+subtitle: "KILL TIME OR KISS TIME"
+description: "Have enthusiasm, Put down uneasiness, Love life, Not reluctant, Have expectations."
+baseurl: ""
+url: "https://aaluopy.github.io"
+
+# Author settings
+author:
+  name: "aaluopy"
+  email: "aaluopy@qq.com"
+  github: "aaluopy"
+  gitlab: "aaluopy"
+
+# Build settings
+markdown: kramdown
+highlighter: rouge
+theme: minima
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-seo-tag
+
+# Pagination
+paginate: 10
+paginate_path: "/posts/page:num/"
+
+# Collections
+collections:
+  posts:
+    output: true
+    permalink: /:categories/:year/:month/:day/:title/
+
+# Exclude from processing
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
+  - README.md
+
+# Defaults
+defaults:
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+      author: "aluopy"
+      show_excerpts: true
+
+# Navigation
+navigation:
+  - title: "Posts"
+    url: "/posts/"
+  - title: "Categories"
+    url: "/categories/"
+  - title: "Tags"
+    url: "/tags/"
+  - title: "Collections"
+    url: "/collections/"
+  - title: "About"
+    url: "/about/"
+
+# Search
+search: true
+
+# Timezone
+timezone: Asia/Shanghai
