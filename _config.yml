@@ -15,7 +15,7 @@ author:
 # Build settings
 markdown: kramdown
 highlighter: rouge
-theme: minima
+# theme: minima  # 注释掉或删除这行
 plugins:
   - jekyll-feed
   - jekyll-sitemap
